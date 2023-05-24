@@ -24,7 +24,7 @@ function validateCardNumber(cardNum, cvc){
             return resValid()
         }
         else{
-            resInvalid('Invalid American Express Card Format!');
+            return resInvalid('Invalid American Express Card Format!');
         }
     }else if(cardNum.match(/^(?:4[0-9]{12}(?:[0-9]{3})?)$/)||cardNum.match(/^(?:5[1-5][0-9]{14})$/)){
         return resValid();
