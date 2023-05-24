@@ -10,11 +10,11 @@ function applyValidation(field, data){
 function applyLuhnValidation(field, data){
   if(data.valid){
     field.classList.replace("validation-invalid", "validation-valid");
-    document.getElementById("cardNumber").style.border = "thick solid #FF0000";
+    document.getElementById("cardNumber").style.border = "thick solid #00FF00";
   }else{
     field.classList.replace("validation-valid", "validation-invalid");
     field.innerHTML = data.message;
-    document.getElementById("cardNumber").style.border = "thick solid #00FF00";
+    document.getElementById("cardNumber").style.border = "thick solid #FF0000";
   }
 }
 
@@ -81,8 +81,8 @@ function validate()
       applyValidation(cardError, json.fields.card);
       applyValidation(cardNameError, json.fields.cardName);
       applyValidation(cardCVCError, json.fields.cardCVC);
-      applyValidation(cardError, json.fields.luhnCard);
-      applyLuhnValidation(cardDateError, json.fields.cardDate);
+      applyLuhnValidation(cardError, json.fields.luhnCard);
+      applyValidation(cardDateError, json.fields.cardDate);
     })
   });
   
