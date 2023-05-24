@@ -1,0 +1,89 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color:aliceblue;
+    margin: 0 10px;
+}
+.payment{
+    background-color: rgb(165, 240, 215);
+    width: 400px;
+    height: auto;
+    margin: 100px auto;
+    padding: 35px;
+    padding-top: 50px;
+    border-radius: 5px;
+    position: relative;
+}
+
+.form .label{
+    display: block;
+    margin-bottom: 5px;
+    margin-top: 3px;
+    font-size: 17px;
+}
+
+.payment h2{
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.form .input {
+    width: 90%;
+    height: 27px;
+    font-size: 15px;
+    margin-bottom: 17px;
+}
+
+.card-grp{
+    display: flex;
+    justify-content: space-between;
+}
+
+#button{
+    margin-top: 40px;
+    background-color:rgb(52, 143, 112);
+    padding: 12px;
+    border-radius: 6px;
+    font-size: 19px;
+    cursor: pointer;
+    text-align: center;
+    width: 310px;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+#exp{
+    width: 150px;
+}
+
+#cvv{
+    width: 100px;
+    margin-right: 48px;
+}
+
+.validation-invalid{
+    width: 250px;
+    outline: red;
+    background-color:rgba(228, 20, 20, 0.694);
+    margin-top: -5px;
+    display:block;
+}
+.validation-valid{
+    width: 250px;
+    outline: red;
+    background-color:rgba(228, 20, 20, 0.694);
+    margin-top: -5px;
+    display:none;
+}
+
+#cvc_error{
+    width: 78px;
+}
+
+#date_error{
+    width: 120px;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html lang="en"> 
+<head>
+    <meta charset="UTF-8">
+<link rel="stylesheet" href="style.css">
+
+<title>Payment Checkout Form</title>
+<script src="script.js"></script> 
+</head>
+<body>
+    
+    <div class="wrapper">
+        <div class="payment">
+            <h2>Payment Gateway</h2>
+
+            <div class="form">
+                <div class="card">
+                    <label class="label">Card holder:</label>
+                    <input type="text" class="input" name="card_holder" placeholder="Name Surname" >
+                    <div class="validation-valid" id="card_holder_error"></div>
+                </div>
+                <div class="card">
+                    <label class="label">Card number:</label>
+                    <input type="text" class="input" name="card_number" maxlength="19" placeholder="Card Number" >
+                    <div class="validation-valid" id="card_number_error"></div>
+                </div>
+                <div class="card-grp">
+                    <div class="card_item">
+                    <label class="label">Expiry date:</label>
+                    <input id = "exp" type="month" min="2023-05" max="2029-12" class="input" name="expiry_date" placeholder="MM / YY">
+                    <div class="validation-valid" id="date_error"></div>    
+                </div>
+                    <div class="card_item" id="cvv">
+                        <label class="label">CVC/CVV</label>
+                        <input  type="text" class="input" name="cvc" placeholder="CVC/CVV">
+                        <div class="validation-valid" id="cvc_error"></div>
+                    </div>    
+                </div>
+                <button id = "button" onclick="validate()"> Pay </button>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
